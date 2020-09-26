@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Quraan</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_quraan">Quraan</string>
+    <string name="title_sebha">Sebha</string>
+    <string name="title_hadith">Hadith</string>
+    <string name="tasbehat_total">مجموع التسبيحات</string>
+    <string name="tasbeha">التسبيحة</string>
+    <string name="ahadith">الأحاديث</string>
+
+    <array name="tasbehat">
+        <item>سبحان الله</item>
+        <item>الحمد لله</item>
+        <item>لا اله الا الله</item>
+        <item>الله أكبر</item>
+        <item>استغفر الله</item>
+    </array>
+</resources>

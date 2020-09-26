@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainbackground"
+    tools:context=".SebhaFragment">
+
+    <ImageView
+        android:id="@+id/sebha"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/sebha"
+        android:tint="#d2ac59"
+        android:adjustViewBounds="true"
+        android:layout_marginTop="64dp"
+        app:layout_constraintWidth_percent=".25"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageView
+        android:id="@+id/refresh"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_refresh"
+        android:adjustViewBounds="true"
+        android:layout_marginTop="32dp"
+        app:layout_constraintWidth_percent="0.15"
+        app:layout_constraintTop_toBottomOf="@id/sebha"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <TextView
+        android:id="@+id/total_tasbehat_count_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:textColor="@color/white"
+        android:text="@string/tasbehat_total"
+        android:textSize="20sp"
+        android:layout_marginStart="12dp"
+        app:layout_constraintTop_toBottomOf="@id/refresh"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/total_tasbehat_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_et"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:text="0"
+        app:layout_constraintTop_toBottomOf="@id/total_tasbehat_count_title"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tasbha_count_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:textColor="@color/white"
+        android:text="@string/tasbeha"
+        android:textSize="20sp"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintTop_toBottomOf="@id/refresh"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tasbeha_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_et"
+        android:layout_marginEnd="12dp"
+        android:layout_marginTop="12dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:text="0"
+        app:layout_constraintTop_toBottomOf="@id/total_tasbehat_count_title"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Spinner
+        android:id="@+id/tasbeeh_spinner"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="@drawable/shape_et"
+        android:layout_marginTop="64dp"
+        android:entries="@array/tasbehat"
+        
+        app:layout_constraintWidth_percent="0.5"
+        app:layout_constraintTop_toBottomOf="@id/total_tasbehat_count"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
